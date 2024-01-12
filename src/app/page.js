@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar'
 import Suppliers from './components/Suppliers'
-import Footer from './components/Footer
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
     <>
-    <Navbar />
-    <Suppliers/>
+    {/* <Navbar />
+    <Suppliers/> */}
     <Footer/>
     </>
   )
