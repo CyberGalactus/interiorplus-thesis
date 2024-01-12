@@ -1,5 +1,5 @@
 // Navbar.js
-import Styles from './Navbar.module.css';
+import Styles from './navbar.module.css';
 
 const Navbar = () => {
     return (
@@ -8,7 +8,7 @@ const Navbar = () => {
                 <a href="/">
                     <img
                         className={Styles.logoImage}
-                        src="/interiorPLus-Svart.png"
+                        src="/interiorPLus.png"
                         alt="Interior plus logo"
                     />
                 </a>
