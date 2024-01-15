@@ -5,21 +5,23 @@ const Footer = () => {
         <>
         <div className={Styles.footer}>
             <div className={Styles.logocontainer}>
+                <div className={Styles.horizontalLine}></div>
                 <a href="/">
                     <img
                         className={Styles.footerLogoImage}
-                        src="/interiorPLus-Svart.png"
+                        src="/interiorPLus.png"
                         alt="Interior plus logo"
                         />
                 </a>
+                <div className={Styles.horizontalLine}></div>
             </div>
             <div className={Styles.contentcontainer}>
                 <div className={Styles.leftcontent}>
                     <ul>
                         <li><a href="mailto:info@interiorplus.com">info@interiorplus.com</a></li>
                         <li>+46(0)8-665 31 18</li>
-                        <li>Grev Turegatan 57, SE-114 38 Stockholm</li>
-                        <li>The showroom is open exclusively for scheduled meetings.</li>
+                        <li>Grev Turegatan 57<br/>114 38 Stockholm</li>
+                        <li>The showroom is open exclusively <br/>for scheduled meetings.</li>
                     </ul>
                 </div>
 
@@ -30,26 +32,36 @@ const Footer = () => {
                             href="https://www.instagram.com/interior_plus08?igsh=a2JlcWxqY3o2YWh5"
                             target="_blank">
                                 <img src="/instagram.png" alt='icon' />
-                                <p className={Styles.instagram}>FOLLOW US ON INSTAGRAM</p>
                             </a>
+                            <p className={Styles.instagram}>FOLLOW US ON INSTAGRAM</p>
                         </li>
                     </ul>
                 </div>
 
                 <div className={Styles.rightcontent}>
+                    <h2>site</h2>
                     <ul>
                         <li>
-                            Grev Turegatan 57, SE-114 38 Stockholm
+                            <a href="/">
+                                <span>Suppliers</span>
+                            </a>
                         </li>
-                        <li className={Styles.description}>
-                            The showroom is open exclusively for scheduled meetings.
+                         <li>
+                            <a href="/">
+                                <span>about us</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="/">
+                                <span>Showroom</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div className={Styles.lowerfooter}>
-            <p>designed and developed by Edu Garma Andersen</p>
+        <div className={Styles.lowerFooter}>
+            <p>designed and developed by Edu Garma Andersen as a master thesis</p>
         </div>
         </>
     )

@@ -1,0 +1,138 @@
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 0;
+}
+
+/* logo begins here */
+
+.logocontainer {
+    text-align: center;
+    text-align: center;
+    position: relative;
+}
+
+.footerLogoImage {
+    width: 150px;
+    height: auto;
+    margin-bottom: -5px;
+}
+
+/* content container begins here */
+
+.contentcontainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* horizontal line begins here */
+
+.horizontalLine {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.horizontalLine::before,
+.horizontalLine::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.horizontalLine::before {
+    left: -20px;
+}
+
+.horizontalLine::after {
+    right: -20px;
+}
+
+/* other */
+
+.leftcontent,
+.middlecontent,
+.rightcontent {
+    flex: 1;
+}
+
+.leftcontent ul,
+.middlecontent ul,
+.rightcontent ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* left content begins here  */
+
+.leftcontent li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.leftcontent li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* middle content begins here */
+
+.middlecontent {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.middlecontent img {
+    width: 50px;
+    height: auto;
+}
+
+.instagram {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* right content begins here */
+
+.rightcontent {
+    text-align: center;
+}
+
+.rightcontent h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.rightcontent span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rightcontent a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.rightcontent a:hover {
+    text-decoration: underline;
+}
+
+/* lower footer begins here */
+
+.lowerFooter {
+    background-color: #1a1a1a;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0;
+}
