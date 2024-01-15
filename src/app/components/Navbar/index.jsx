@@ -7,7 +7,7 @@ const Navbar = () => {
                 <a href="/">
                     <img
                         className={Styles.logoImage}
-                        src="/interiorPLus-Svart.png"
+                        src="/interiorPLus.png"
                         alt="Interior plus logo"
                     />
                 </a>
