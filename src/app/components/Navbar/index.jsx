@@ -1,4 +1,3 @@
-// Navbar.js
 import Styles from './Navbar.module.css';
 
 const Navbar = () => {
