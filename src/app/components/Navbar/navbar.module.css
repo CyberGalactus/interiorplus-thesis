@@ -1,14 +1,21 @@
-/* the whole navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 18px 0px;
-    border-bottom: 2px solid #000;
-    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
-/* logo begins here */
+.NavbarContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* max-width: 1200px; */
+    /* Set your desired maximum width */
+    /* margin: 0 auto; */
+}
 
 .leftNav {
     margin-right: auto;
@@ -19,9 +26,80 @@
     height: auto;
 }
 
+.mobileMenu {
+    display: none;
+}
+
+
+.knappar {
+    background: rgb(138, 137, 137);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* display: inline-block; */
+}
+
+.bars {
+    width: 24px;
+    height: 24px;
+}
+
+.rightNav ul {
+    list-style: none;
+    display: flex;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.rightNav li {
+    margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+    .mobileMenu {
+        display: block;
+    }
+
+    .rightNav {
+        display: none;
+        /* position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0; */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+
+
+
+
+/* the whole navbar */
+/* .navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 18px 0px;
+    border-bottom: 2px solid #000;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+} */
+
+/* logo begins here */
+
+/* .leftNav {
+    margin-right: auto;
+}
+
+.logoImage {
+    width: 320px;
+    height: auto;
+} */
+
 /* here begins the right navbar */
 
-.rightNav span {
+/* .rightNav span {
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -45,4 +123,4 @@
 
 .rightNav li a:hover {
     text-decoration: underline;
-}
+} */

@@ -13,6 +13,7 @@
 /* showcase container begins here */
 
 .showcaseContainer {
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -38,6 +39,7 @@
 /* showcase col begins here */
 
 .showcaseCol {
+    background-color: white;
     width: 300px;
     height: auto;
 }

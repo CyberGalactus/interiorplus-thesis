@@ -6,3 +6,17 @@ main {
   min-height: 100vh;
   flex-direction: column;
 }
+
+body::before {
+  content: "";
+  background: url('../../public//logotwo.png') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(1px);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.card{
+  padding-top: 50px;
+}

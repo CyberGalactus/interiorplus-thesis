@@ -5,7 +5,7 @@ import Styles from './Showroom.module.css';
 const ShowroomSection = () => {
   return (
     <>
-    <div className={Styles.Showroom}>
+    <div className={Styles.Showroom} id="showroom">
     
     </div>
     <div className={Styles.mapContainer}>

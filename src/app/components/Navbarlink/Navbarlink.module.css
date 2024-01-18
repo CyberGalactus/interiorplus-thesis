@@ -1,0 +1,11 @@
+.navlink {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.navlink:hover {
+    color: #007bff;
+}

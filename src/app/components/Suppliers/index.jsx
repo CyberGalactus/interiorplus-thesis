@@ -4,7 +4,7 @@ import Styles from './Suppliers.module.css'
 const Suppliers = () => {
     return (
         <>
-        <div className={Styles.suppliersContainer}>
+        <div className={Styles.suppliersContainer} id="suppliers">
             <h1 className={Styles.title}>Our Suppliers</h1>
             <div className={Styles.showcaseContainer}>
                 <div className={Styles.showcaseCol}>

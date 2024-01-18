@@ -1,0 +1,30 @@
+.overlay {
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuListItem {
+    margin-bottom: 25px;
+}
+
+.menuListItem {
+    transition: color 0.3s ease-in-out;
+}
+
+/* @media (max-width: 768px) {
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+} */

@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <main>
       <Navbar />
-      <div>
+      <div className='card'>
       <Suppliers/>
       <Showroom />
       </div>
