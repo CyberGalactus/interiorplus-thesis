@@ -1,6 +1,9 @@
+import Link from 'next/link';
 import Styles from './Navbar.module.css';
 
+
 const Navbar = () => {
+
     return (
         <nav className={Styles.navbar}>
             <div className={Styles.leftNav}>
@@ -32,11 +35,11 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <a href="/">
+                        <Link href="#showroom">
                             <span>
                                 Showroom+
                             </span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,60 @@
+
+.mapContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.mapResponsive {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mapResponsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ddd;
+}
+
+.rightmap {
+    width: 40%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rightmap h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rightmap h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Media query för mindre skärmar */
+@media (max-width: 768px) {
+    .mapContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mapResponsive {
+        width: 100%;
+        padding-top: 75%;
+        /* Justera aspect ratio efter behov */
+    }
+
+    .rightmap {
+        width: 100%;
+    }
+}
