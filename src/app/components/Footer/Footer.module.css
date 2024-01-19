@@ -2,12 +2,14 @@
     background-color: #ffffff;
     color: #000000;
     padding: 30px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1.1);
+    text-align: center;
+    width: 100%;
 }
 
 /* logo begins here */
 
 .logocontainer {
-    text-align: center;
     text-align: center;
     position: relative;
 }
@@ -134,5 +136,20 @@
     color: #777;
     font-style: italic;
     text-align: center;
-    padding: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .contentcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middlecontent {
+        display: contents;
+    }
+
+    .horizontalLine::before,
+    .horizontalLine::after {
+        display: none;
+    }
 }

@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
         </div>
         <div className={Styles.lowerFooter}>
-            <p>designed and developed by Edu Garma Andersen as a master thesis</p>
+            <p>Designed and developed by Edu Garma Andersen as a master thesis</p>
         </div>
         </>
     )

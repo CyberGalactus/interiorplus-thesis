@@ -1,4 +1,11 @@
+*{
+      box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 main {
   display: flex;
@@ -9,7 +16,7 @@ main {
 
 body::before {
   content: "";
-  background: url('../../public//logotwo.png') no-repeat center center fixed;
+  background: url('../../public//logotwo.png') no-repeat center center;
   background-size: cover;
   filter: blur(1px);
   z-index: -1;
@@ -18,5 +25,5 @@ body::before {
   position: fixed;
 }
 .card{
-  padding-top: 50px;
+  margin-top: 124px;
 }
