@@ -41,7 +41,6 @@
     color: #555;
 }
 
-/* Media query för mindre skärmar */
 @media (max-width: 768px) {
     .mapContainer {
         flex-direction: column-reverse;
@@ -51,10 +50,28 @@
     .mapResponsive {
         width: 100%;
         padding-top: 75%;
-        /* Justera aspect ratio efter behov */
     }
 
     .rightmap {
         width: 100%;
     }
+
+    .showroomImg img{
+        justify-content: space-around;
+        display: flex;
+    }
+}
+
+.showroomImg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.showroomImg img {
+    width: calc(33.333% - 10px);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

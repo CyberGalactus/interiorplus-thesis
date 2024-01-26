@@ -6,6 +6,7 @@ const Suppliers = () => {
         <>
         <div className={Styles.suppliersContainer} id="suppliers">
             <h1 className={Styles.title}>Our Suppliers</h1>
+            <p className={Styles.subTitle}>Below, you will find a list of our suppliers. Click on the respective supplier's logo to visit their website.</p>
             <div className={Styles.showcaseContainer}>
                 <div className={Styles.showcaseCol}>
                     <a className={Styles.showcasebox} href="https://www.andrewmartin.co.uk/" target="_blank">

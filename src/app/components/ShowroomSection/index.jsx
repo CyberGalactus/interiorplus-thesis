@@ -1,4 +1,3 @@
-// ShowroomSection.js
 import React from 'react';
 import Styles from './Showroom.module.css';
 
@@ -6,7 +5,6 @@ const ShowroomSection = () => {
   return (
     <>
     <div className={Styles.Showroom} id="showroom">
-    
     </div>
     <div className={Styles.mapContainer}>
         <div className={Styles.mapResponsive}>
@@ -15,23 +13,20 @@ const ShowroomSection = () => {
             ></iframe>
         </div>
       <div className={Styles.rightmap}>
-        <h1>Location</h1>
+        <h1 className={Styles.title}>How to find us</h1>
         <h2>The showroom is open exclusively for scheduled meetings, To book a meeting, please feel free to send an email and we will coordinate a suitable time for your visit. </h2>
-        <ul>
-            <li>
-                <span>
-                    addres: Grev Turegatan 57 114 38 Stockholm
-                </span>
-            </li>
-            <li>
-                <span>
-                    phone: +46(0)8-665 31 18
-                </span>
-            </li>
-            <li></li>
-        </ul>
+        <div className={Styles.info}>
+          <p>Grev Turegatan 57<br/>114 38 Stockholm</p>
+          <p>Opening hours:<br/>Mon–Fri: 10 am–6 pm</p>
+          <p>contact details:<br/> +46 8 665 31 18<br/>info@interiorplus.com</p>
+        </div>
       </div>
     </div>
+      {/* <div className={Styles.showroomImg}>
+        <img src="/showroomOne.jpg" alt="Showroom bild 1" />
+        <img src="/showroomTwo.jpg" alt="Showroom bild 2" />
+        <img src="/showroomThree.jpg" alt="Showroom bild 3" />
+      </div> */}
     </>
   );
 };
