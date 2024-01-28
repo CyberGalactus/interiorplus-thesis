@@ -5,6 +5,7 @@ import NavLink from '../Navbarlink';
 import MenuOverlay from '../MenuOverlay';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Image from 'next/image';
 
 const navLinks = [
   {
@@ -28,10 +29,12 @@ const Navbar = () => {
             <div className={Styles.NavbarContainer}>
                 <div className={Styles.leftNav}>
                     <Link href="/">
-                        <img
+                        <Image
                             className={Styles.logoImage}
                             src="/interiorPLus.png"
                             alt="Interior plus logo"
+                            width={320}
+                            height={119}
                             />
                     </Link>
                 </div>

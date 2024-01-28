@@ -1,4 +1,5 @@
 import Styles from './Footer.module.css'
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -7,10 +8,13 @@ const Footer = () => {
             <div className={Styles.logocontainer}>
                 <div className={Styles.horizontalLine}></div>
                 <a href="/">
-                    <img
+                    <Image
                         className={Styles.footerLogoImage}
                         src="/interiorPLus.png"
                         alt="Interior plus logo"
+                        width={190}
+                        height={90}
+                        // quality={100}
                         />
                 </a>
                 <div className={Styles.horizontalLine}></div>
@@ -31,7 +35,13 @@ const Footer = () => {
                             <a className={Styles.instagramlinks}
                             href="https://www.instagram.com/interior_plus08?igsh=a2JlcWxqY3o2YWh5"
                             target="_blank">
-                                <img src="/instagram.png" alt='icon' />
+                                <Image 
+                                src="/instagram.png" 
+                                alt='icon' 
+                                className={Styles.instaimg} 
+                                width={100} 
+                                height={100} 
+                                quality={100}/>
                             </a>
                             <p className={Styles.instagram}>FOLLOW US ON INSTAGRAM</p>
                         </li>
