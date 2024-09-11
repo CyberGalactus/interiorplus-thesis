@@ -6,6 +6,7 @@ import MenuOverlay from '../MenuOverlay';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Image from 'next/image';
+import LanguageSelector from '../LanguageSelector';
 
 const navLinks = [
   {
@@ -58,9 +59,18 @@ const Navbar = () => {
                         </li>
                         ))}
                     </ul>
-                </div>
+                </div>                          
+                        <li className={Styles.languageNav}>
+                            <div className={Styles.languageBox}>
+                                <LanguageSelector />
+                            </div>
+                        </li>
             </div>
-            {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+            {navbarOpen ? ( <>
+                <MenuOverlay links={navLinks}/>
+                <LanguageSelector />
+            </>
+            ) : null}
         </nav>
     );
 }
